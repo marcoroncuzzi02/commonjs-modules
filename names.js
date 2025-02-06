@@ -17,6 +17,4 @@ function names(firstName, lastName){
     }
 }
 
-module.exports ={
-    names
-}
+module.exports = names
