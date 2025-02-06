@@ -17,4 +17,6 @@ function names(firstName, lastName){
     }
 }
 
-// export names() from "names.js"
+module.exports ={
+    names
+}
