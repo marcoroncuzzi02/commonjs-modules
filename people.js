@@ -1,21 +1,21 @@
-import names from "./names.js"
+// import names from "./names.js"
 
-import hobby from "./hobbies.js"
+// import hobby from "./hobbies.js"
 
-console.log(names, hobby)
+const getHobby = require("./hobbies")
 
-function users(){
-    return {
-        fullName : names('Marco', 'Roncuzzi'),
-        hobbies : hobby('sciare', 'surfare', 'pitturare')
+const getFullName = require("./names")
+
+const getInfo = () =>(
+    {
+        fullName: getFullName('Marco', 'Roncuzzi'),
+        hobby: getHobby('sciare', 'surfare', 'pitturare')
     }
-}
+)
 
-console.log (users.fullName)
+console.log (getInfo())
 
-// const myImportHobby = require("./hobbies")
 
-// const myImportName = require("./names")
 
 
 
